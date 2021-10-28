@@ -1,0 +1,122 @@
+
+git init
+     
+      # Reinitialized existing Git repository in C:/Users/vysag/OneDrive/Documents/.git/
+
+git remote add origin https://github.com/vysagh00/Hello-world.git
+git remote -v 
+
+      #origin  https://github.com/vysagh00/Hello-world.git (fetch)
+      #origin  https://github.com/vysagh00/Hello-world.git (push) 
+
+git status
+     #On branch master
+
+     No commits yet
+
+     Untracked files:
+     (use "git add <file>..." to include in what will be committed)
+          Python Prog/
+          
+     nothing added to commit but untracked files present (use "git add" to track)
+
+git add .
+
+git status
+      On branch master
+
+      No commits yet
+
+      Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+        new file:   Python Prog/1.py
+        new file:   Python Prog/2.py
+        new file:   Python Prog/exe/git.txt
+        new file:   Python Prog/python1.py
+        new file:   Python Prog/python2.py
+      
+ ''''                                                                               ''''
+   git commit -m "first commit"
+       Author identity unknown
+       Run
+
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+
+         to set your account's default identity.
+         Omit --global to set the identity only in this repository.
+
+         fatal: unable to auto-detect email address (got 'vysag@LAPTOP-K4NO1KTB.(none)')
+
+   git push origin master
+      error: src refspec master does not match any
+      error: failed to push some refs to 'https://github.com/vysagh00/Hello-world.git'
+   
+ ''''                                                                               ''''
+
+git config --global user.email "vysaghzky@gmail.com"
+
+git commit -m "first commit"
+      [main (root-commit) a46a19e] first commit
+      create mode 100644 Python Prog/1.py
+      create mode 100644 Python Prog/2.py
+      create mode 100644 Python Prog/exe/git.txt
+      create mode 100644 Python Prog/python1.py
+      create mode 100644 Python Prog/python2.py
+
+
+ ''''                                                                             ''''
+   git push origin master
+      error: failed to push some refs to 'https://github.com/vysagh00/Hello-world.git'
+
+ ''''                                                                             ''''
+"""
+git push origin main  
+      info: please complete authentication in your browser...
+      To https://github.com/vysagh00/Hello-world.git
+      ! [rejected]        main -> main (fetch first)
+      error: failed to push some refs to 'https://github.com/vysagh00/Hello-world.git'
+      hint: Updates were rejected because the remote contains work that you do
+      hint: not have locally. This is usually caused by another repository pushing
+      hint: (e.g., 'git pull ...') before pushing again.
+      hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+                                                                                  """
+git push origin main -f
+      Enumerating objects: 9, done.
+      Counting objects: 100% (9/9), done.
+      Delta compression using up to 8 threads
+      Compressing objects: 100% (7/7), done.
+      Writing objects: 100% (9/9), 1.65 KiB | 282.00 KiB/s, done.
+      Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+      To https://github.com/vysagh00/Hello-world.git
+      + ecd9d31...a46a19e main -> main (forced update)
+ 
+
+  #change in prog# 
+git add .
+     [main f5a6602] updated exe/git.txt
+     1 file changed, 62 insertions(+), 6 deletions(-)
+git push orgin main
+     fatal: 'orgin' does not appear to be a git repository
+     fatal: Could not read from remote repository.
+     Please make sure you have the correct access rights
+     and the repository exists.
+"""
+git push origin main -f
+     Enumerating objects: 9, done.
+     Counting objects: 100% (9/9), done.
+     Delta compression using up to 8 threads
+     Compressing objects: 100% (3/3), done.
+     Writing objects: 100% (5/5), 1.43 KiB | 243.00 KiB/s, done.
+     Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+     remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+     To https://github.com/vysagh00/Hello-world.git
+        a46a19e..f5a6602  main -> main                                
+                                                                    """
+
+git log --oneline
+     f5a6602 (HEAD -> main, origin/main) updated exe/git.txt
+     a46a19e first commit
+
+#to clone#
+git clone https://github.com/vysagh00/Hello-world.git     
